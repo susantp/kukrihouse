@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\Mail;
 class OrderObserver
 {
     public $afterCommit = true;
+
     /**
      * Handle the Order "created" event.
      *
@@ -18,8 +19,11 @@ class OrderObserver
      */
     public function created(Order $order)
     {
-        Log::info('Observed ...............s');
-        Mail::to('sales@egkukrihouse.com')->send(new OrderSaved($order));
+        try {
+            Mail::to('sales@egkukrihouse.com')->send(new OrderSaved($order));
+        } catch (\Exception $exception) {
+            Log::info("Order Mail Error................" . $exception->getMessage());
+        }
     }
 
     /**
