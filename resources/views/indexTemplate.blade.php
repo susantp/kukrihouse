@@ -4,7 +4,7 @@
 
     <!-- Basic page needs
 	============================================ -->
-    <title>Welcome | Ex Gurkha Kuri House</title>
+    <title>Welcome | Ex Gurkha Kurki House</title>
     <meta charset="utf-8">
     <meta name="keywords"
           content="kukri, ex gurkha, gurkha hat, ex gurkha kukri house, kukri house"/>
