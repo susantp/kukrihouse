@@ -23,12 +23,12 @@
                         </div>
                     </div>
                     <!-- Phone -->
-                    <div class="phone-contact hidden-xs">
+                    {{--<div class="phone-contact hidden-xs">
                         <div class="inner-info">
                             <h2>Hotline:</h2>
                             <p>(800) 936 - 0737</p>
                         </div>
-                    </div>
+                    </div>--}}
                     <!-- //End Phone -->
 
                 </div>
