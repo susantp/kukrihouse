@@ -62,9 +62,9 @@ class PageController extends Controller
         $validated = $request->validated();
         $order = collect($validated)->only('name', 'street','city','state','country','phone','hidden_item_name','hidden_item_quantity')->toArray();
         if(Order::create($order)){
-            return redirect('/ordered')->with('orderSuccess', 'Order Placed');
+            return redirect()->route('ordered');
         };
-        return redirect('/');
+        return redirect()->route('index');
     }
 
     public function ordered(){

@@ -20,8 +20,7 @@ Route::get('product/{slug?}', [\App\Http\Controllers\PageController::class, 'pro
 Route::get('category/{categoryID?}', [\App\Http\Controllers\PageController::class, 'category']);
 Route::get('page/{slug?}', [\App\Http\Controllers\PageController::class, 'page']);
 Route::post('order', [\App\Http\Controllers\PageController::class, 'order']);
-Route::get('ordered', [\App\Http\Controllers\PageController::class, 'ordered']);
-
+Route::get('/ordered', [\App\Http\Controllers\PageController::class, 'ordered'])->name('ordered');
 /*Route::get('images', function (){
     $fo = getProductImagesPath('eg001');
     foreach ($fo as $f) {
