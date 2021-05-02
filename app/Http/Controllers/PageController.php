@@ -69,6 +69,6 @@ class PageController extends Controller
 
     public function ordered(){
         $categories = \App\Models\Category::all();
-        return view('orderPlaced', compact('categories'));
+        return view('ordered', compact('categories'));
     }
 }
