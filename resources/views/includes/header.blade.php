@@ -9,13 +9,8 @@
                 <!-- Logo -->
                 <div class="navbar-logo col-md-3 col-sm-4 col-xs-12">
                     <a href="{{route('index')}}">
-                        @if(request()->segment(1) == "product")
-                            <img src="{{asset('storage/image/demo/logos/theme_logo.png')}}"
-                                 title="{{config('app.name')}}" alt="{{config('app.name')}}">
-                        @else
-                            <img src="{{asset('storage/image/demo/logos/theme_logo_cyan.png')}}"
-                                 title="{{config('app.name')}}" alt="{{config('app.name')}}">
-                        @endif
+                        <img src="{{asset('storage/image/demo/logos/logo.png')}}"
+                             title="{{config('app.name')}}" alt="{{config('app.name')}}">
 
                     </a>
                 </div>

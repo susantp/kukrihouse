@@ -23,7 +23,7 @@
                         <div class="title-block">
                             <div class="page-heading">SIGN UP FOR OUR NEWSLETTER</div>
                             <div class="pre-text">
-                               
+
                             </div>
                         </div>
                         <div class="block_content">
@@ -58,13 +58,8 @@
                     <div class="content-block-footer">
                         <div class="footer-logo">
                             <a href="{{route('index')}}"><img class="lazyload" data-sizes="auto"
-                                                              src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                                                              @if(request()->segment(1) == "product")
-                                                              data-src="{{asset('storage/image/demo/logos/theme_logo.png')}}"
-                                                              @else
-                                                              data-src="{{asset('storage/image/demo/logos/theme_logo_cyan.png')}}"
-                                                              @endif
-                                                              title="Your Store" alt="Your Store"/></a>
+                                                              src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{asset('storage/image/demo/logos/logo.png')}}"
+                                                              title="{{config('app.name')}}" alt="Your Store"/></a>
                         </div>
                         <p>
                             <b>
