@@ -62,12 +62,12 @@ class PageController extends Controller
         $validated = $request->validated();
         $order = collect($validated)->only('name', 'street','city','state','country','phone','hidden_item_name','hidden_item_quantity')->toArray();
         if(Order::create($order)){
-            return redirect('/order-placed')->with('orderSuccess', 'Order Placed');
+            return redirect('/ordered')->with('orderSuccess', 'Order Placed');
         };
         return redirect('/');
     }
 
-    public function orderPlaced(){
+    public function ordered(){
         $categories = \App\Models\Category::all();
         return view('order-placed', compact('categories'));
     }
