@@ -65,7 +65,11 @@
                                     {{\Illuminate\Support\Str::limit($product->description, 1000)}}
                                     <a class="text-link" href="#producttab">Read More...</a>
                                 </div>
+
                                 <div id="product">
+                                    <a href="tel:+1-800.936.0737" class="btn btn-warning"><i class="fa fa-phone"></i> Contact Seller</a>
+                                </div>
+                                {{--<div id="product">
                                     <h4>Order Product</h4>
                                     <div class="form-group box-info-product">
                                         <div class="option quantity">
@@ -88,7 +92,7 @@
 
                                     </div>
 
-                                </div>
+                                </div>--}}
                                 <script>
                                     $(document).ready(function () {
                                         // onclick="cart.add('42', '1');
